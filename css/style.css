@@ -47,6 +47,12 @@ a.menu-logo {
     font-size: 1.125em;
 }
 
+@media only screen and (max-width: 739px){
+    float: none;
+    clear: both;
+}
+
+
 /* intro */
 
 .intro {
@@ -75,6 +81,13 @@ a.menu-logo {
     font-style: italic;
     font-size: 1.125em;
 }
+
+@media only screen and (max-width: 739px){
+    .intro {
+        padding: 60px 0;       
+    }
+}
+
 
 /* sobre */
 
@@ -133,6 +146,26 @@ a.menu-logo {
     margin: 20px auto;
     max-width: 460px;
         
+}
+
+@media (min-width: 740px) and (max-width:980px){
+    .sobre-container {
+        max-width: 720px;
+    }
+    .sobre-item {
+        width: 340px;
+    }
+}
+
+@media (max-width: 730px) {
+    .sobre-container {
+        max-width: 300px;
+    }
+
+    .sobre-item {
+        width: 300px;
+        margin: 0 auto;
+    }
 }
 
 .servicos {
@@ -208,6 +241,28 @@ h2.servicos-producao::before {
     margin: 0 auto;
 }
 
+
+@media (min-width: 740px) and (max-width:980px){
+    .servicos-container {
+        max-width: 720px;
+    }
+    .servicos-item {
+        width: 220px;
+    }
+}
+
+@media (max-width: 730px) {
+    .servicos-container {
+        max-width: 300px;
+    }
+
+    .servicos-item {
+        margin: 10px auto 0 auto;
+
+    }
+}
+
+
 .locais {
     max-width: 960px;
     margin: 0 auto;
@@ -254,6 +309,29 @@ h2.servicos-producao::before {
     color: #252525;
     padding: 10px 20px;
 }
+
+
+@media (min-width: 740px) and (max-width:980px){
+    .locais {
+        max-width: 720px;
+    }
+    .locais-item > div, .locais-item img {
+        width: 340px;
+    }
+}
+
+@media (max-width: 730px) {
+    .locais {
+        max-width: 300px;
+    }
+    .locais-item > div, .locais-item img {
+        width: 300px;
+        margin: 0px;
+    }
+}
+
+
+
 .assine {
     background: #e7e4d8;
     padding: 30px 0;
@@ -320,6 +398,34 @@ h2.servicos-producao::before {
     cursor: pointer;
 }
 
+
+@media (min-width: 740px) and (max-width:980px){
+    .assine-container {
+        max-width: 720px;
+    }
+    .assine-info {
+        width: 340px;
+    }
+    .assine form {
+        width: 340px;
+    }
+    .assine input {
+        width: 340px;
+    }
+}
+
+@media (max-width: 730px) {
+    .assine-container {
+        max-width: 300px;
+    }
+
+    .assine-info, .assine form, .assine input {
+        width: 300px;
+        margin: 10px 0 0 0;        
+    }
+}
+
+
 .footer {
     background: #d6d3c8;
     padding: 40px 0;
@@ -348,3 +454,20 @@ h2.servicos-producao::before {
     margin: 0 10px;
     display: block;
 }
+
+
+@media (max-width: 739px){
+    .footer-container {
+        max-width: 300px;
+    }
+    .footer p {
+        float: none;
+        margin: 0px;
+    }
+    .footer img {
+        float: none;
+        margin: 20px 0;
+    }
+}
+
+
